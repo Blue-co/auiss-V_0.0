@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>auis</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="CSS/sameStyle.css" />
-    <link rel="stylesheet" href="CSS/auis.css" />
+    <link rel="stylesheet" href="/CSS/sameStyle.css" />
+    <link rel="stylesheet" href="/CSS/auis.css" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/CSS/sameStyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/CSS/auis.css') }}">
   </head>
   <body onload="loadStoredIdea()">
     <div class="opp">
@@ -47,7 +50,10 @@
       <button type="button" onclick="youC()" class="div1">보내기</button>
       <button type="button" onclick="youCRemove()" class="div2">지우기</button>
     </div>
-    <script src="JS/input.js"></script>
-    <script src="JS/chat.js"></script>
+    <script src="/JS/input.js"></script>
+    <script src="/JS/chat.js"></script>
+    
+    <script src="{{ url_for('static', '/JS/input') }}"></script>
+    <script src="{{ url_for('static', '/JS/chat.js') }}"></script>
   </body>
 </html>
