@@ -9,7 +9,7 @@ port = int(os.environ.get("PORT", 10000)) # Render는 기본적으로 10000번 �
 
 @app.route('/')
 def hello():
-    return "Hello, Flask on Render!"
+    return render_template('auis.html')
 
 if __name__ == "__main__":
     # 로컬 테스트용 환경에서는 port를 사용하고, 
