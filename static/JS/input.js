@@ -1,7 +1,7 @@
 let editIdx = null;
-const text = document.getElementById('youInput').value;
 
 function youC() {
+  const text = document.getElementById('youInput').value;
   if (!text.trim()) return;
   const currentIdeas = JSON.parse(localStorage.getItem('ideas') || '[]');
   if (editIdx !== null) {
@@ -17,5 +17,6 @@ function youC() {
 }
 
 function brE() {
+  const text = document.getElementById('youInput').value;
   text.innerHTML = '<br>';
 }
