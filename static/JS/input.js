@@ -17,5 +17,5 @@ function youC() {
 }
 
 function brE() {
-  text.
+  text.innerHTML = '<br>';
 }
