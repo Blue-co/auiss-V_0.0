@@ -17,6 +17,6 @@ function youC() {
 }
 
 function brE() {
-  const text = document.getElementById('youInput').value;
+  const text = document.getElementById('youInput');
   text.innerHTML = '<br>';
 }
