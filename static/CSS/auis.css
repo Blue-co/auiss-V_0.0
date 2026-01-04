@@ -193,10 +193,10 @@ textarea:hover {
 @media (max-width: 550px) and (min-width: 300px) {
   .opp {
     display: inline;
-    width: 40%;
+    width: 70%;
     height: 25px;
     position: absolute;
-    left: 120px;
+    left: 40px;
   }
   .op {
     position: absolute;
