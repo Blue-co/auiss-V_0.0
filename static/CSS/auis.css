@@ -200,6 +200,8 @@ input:hover {
     display: inline;
     width: 92%;
     height: 25px;
+    position: absolute;
+    left: 120px;
   }
   .op {
     position: absolute;
@@ -253,13 +255,12 @@ input:hover {
     opacity: 0.9;
   }
   .card {
-    width: 170px;
+    width: 25px;
     height: 25px;
     border-radius: 50px;
-    margin-left: 14.3px;
     position: absolute;
-    top: 90px;
-    left: 0;
+    top: 0;
+    left: 10px;
   }
   .card:hover {
     background-color: lightskyblue;
