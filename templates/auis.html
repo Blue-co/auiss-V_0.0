@@ -40,7 +40,7 @@
     <div class="bom" id="45tr"></div>
     <div class="op">
      <textarea id="youInput" 
-  onkeydown="if(event.shiftKey && event.key === 'Enter') brE(); if(event.key === 'Enter') youC(); { event.preventDefault(); send(); }" 
+  onkeydown="if(event.key === 'Enter') youC(); { event.preventDefault(); send(); }" 
   placeholder="내용을 입력하세요..." 
   style="resize: none;"></textarea>
       <button type="button" onclick="youC()" class="div1">보내기</button>
