@@ -26,3 +26,7 @@ function brE() {
   // event.preventDefault()가 필요할 수 있습니다.
 }
 
+function auScl(textarea) {
+        textarea.style.height = 'auto' // 높이를 자동으로 초기화
+        textarea.style.height = textarea.scrollHeight + 'px' // 스크롤 높이에 맞게 높이 설정
+}
