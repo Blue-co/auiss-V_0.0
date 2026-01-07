@@ -41,7 +41,7 @@
     <div class="op">
      <textarea id="youInput" 
   onkeydown="if(event.shiftKey && event.key === 'Enter')  { event.preventDefault(); send(); }" 
-  placeholder="내용을 입력하세요..." 
+  placeholder="내용을 입력하세요..." oninput="auScl(this)"
   style="resize: none;"></textarea>
       <button type="button" onclick="youC()" class="div1">보내기</button>
     </div>
