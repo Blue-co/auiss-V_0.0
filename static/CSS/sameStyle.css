@@ -45,8 +45,7 @@ body {
 
 .menu-a:nth-of-type(1):hover {
   background-color: #121319;
-  height: 25px;
-  width: 100%;
+  width: 100vw;
 }
 
 
