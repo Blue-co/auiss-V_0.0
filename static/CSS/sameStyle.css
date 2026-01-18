@@ -37,7 +37,6 @@ body {
 }
 
 .menu-a:hover {
-  text-align: center;
   color: #4169e1;
   font-size: 20.5px;
   transition: 0.3s;
