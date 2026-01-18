@@ -94,104 +94,6 @@ textarea:hover {
 ::placeholder {
   color: #7cfc00;
 }
-
-.card {
-  background: blue;
-  height: 30px;
-  width: 30px;
-  border-radius: 0 0 10px 0;
-  position: absolute;
-  left: 65%;
-  z-index: 2;
-  font-size: none;
-}
-
-.card .card-im_if {
-  display: none;
-}
-
-.card .card-tage-box {
-  display: none;
-}
-
-.card .card-box-if {
-  display: none;
-}
-
-.card:hover {
-  background: none;
-  background-color: lightskyblue;
-  height: 200px;
-  width: 140px;
-  border-radius: 7px;
-  position: absolute;
-  left: 65%;
-  transition: 0.8s;
-}
-
-.card:hover .card-im_if {
-  display: block;
-}
-
-.card:hover .card-img {
-  width: 100%;
-  height: 40%;
-  border-radius: 7px;
-}
-
-.card:hover .card-title {
-  position: absolute;
-  top: 58px;
-  left: 0px;
-  background-color: #fff;
-  font-size: 13px;
-  width: 60%;
-  height: 16px;
-  padding-left: 30px;
-  border-radius: 0 50px 0 20px;
-  display: flex;
-  align-items: center;
-}
-
-.card:hover .card-box-if {
-  display: block;
-}
-
-.card:hover .card-tage-box {
-  display: flex;
-}
-
-.card-tage {
-  margin: 14px 0 0 1.5px;
-  font-size: 9px;
-  background-color: #333;
-  border-radius: 50px;
-  width: 35px;
-  color: #fff;
-  text-align: center;
-}
-
-.card-in-hr {
-  background-color: #333;
-  height: 0.1px;
-}
-
-.card-mn {
-  font-size: 13px;
-}
-
-.card-a {
-  display: inline-block;
-  color: #000;
-  text-decoration: none;
-  width: auto;
-  height: auto;
-}
-
-.card-a:hover .card {
-  background-color: lightblue;
-}
-
 @media (max-width: 550px) and (min-width: 300px) {
   .opp {
     display: inline;
@@ -251,51 +153,8 @@ textarea:hover {
     font-size: 14px;
     opacity: 0.9;
   }
-  .card {
-    width: 25px;
-    height: 25px;
-    margin-top: 22px;
-    border-radius: 50px;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    box-shadow: 0 0 30px 10px #ffffff;
-  }
-  .card:hover {
-    background-color: lightskyblue;
-    width: 160px;
-    height: 160px;
-    border-radius: 100px;
-    position: absolute;
-    left: 0;
-    transition: 0.8s;
-  }
-  .card:hover .card-img {
-    width: 100%;
-    height: 50%;
-    border-radius: 0 0 100px 100px;
-    position: absolute;
-    left: 0;
-  }
   .div {
     animation: ani 5s infinite;
-  }
-  .card:hover .card-title {
-    position: absolute;
-    top: -13px;
-    background-color: #fff;
-    font-size: 13px;
-    border-radius: 0 0 10px 10px;
-    width: 50%;
-    height: 20px;
-    margin-left: 25px;
-    opacity: 0.4;
-  }
-  .card:hover .card-tage-box {
-    display: flex;
-    position: absolute;
-    left: 80px;
-    opacity: 0.6;
   }
   .chat-bubble_button-box {
     /* 모바일에서는 버튼 UI를 숨기고 스와이프로 동작하도록 처리합니다 */
@@ -305,11 +164,5 @@ textarea:hover {
   .chat-bubble {
     touch-action: pan-y;
     will-change: transform;
-  }
-  .card-mn {
-    position: absolute;
-    text-align: center;
-    top: 60px;
-    font-size: 15px;
   }
 }
