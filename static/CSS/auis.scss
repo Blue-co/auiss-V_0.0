@@ -1,0 +1,168 @@
+.chat-bubble {
+  background: #222a36;
+  color: #fff;
+  border-radius: 50px 26px 50px 50px;
+  padding: 10px 16px;
+  margin: 8px 0;
+  max-width: 44%;
+  word-break: break-word;
+  box-shadow: 2px 2px 8px #fff;
+  position: relative;
+  font-size: 15px;
+  left: 0;
+}
+
+.chat-bubble.user {
+  display: flex;
+  background: #121319;
+  color: #fff;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.chat-bubble.other {
+  display: flex;
+  background: #222a36;
+  color: #fff;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.chat-bubble_button-box {
+  display: flex;
+  position: absolute;
+  left: 325px;
+  padding: 0;
+}
+
+.re,
+.emov {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  height: 28px;
+  width: 48px;
+}
+
+.div1 {
+  background-color: #4169e1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #66cdaa;
+  text-align: center;
+  font-size: 8px;
+  margin: 1px 0 1px 4px;
+}
+
+textarea {
+  background-color: #000000;
+  color: blue;
+  border: 5px solid #66cdaa;
+  width: 87%;
+  height: auto;
+  resize: none;
+  overflow-y: auto;
+  border-radius: 8px;
+  margin: 0 0 0 6px;
+}
+
+textarea:hover {
+  box-shadow: 3px 3px 9px #ffffff;
+}
+
+.div1:hover {
+  box-shadow: 4px 4px 6px #7fff00;
+  color: #7fff00;
+}
+
+.bom {
+  color: #ffffff;
+  margin: 0 60px 0 25px;
+  width: 60%;
+  height: 680px; /* 높이를 제한하여 내용이 넘치게 함 */
+  position: absolute;
+  top: 6%;
+  left: 0;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+::-moz-placeholder {
+  color: #7cfc00;
+}
+
+::placeholder {
+  color: #7cfc00;
+}
+@media (max-width: 550px) and (min-width: 300px) {
+  .opp {
+    display: inline;
+    width: 80%;
+    height: 25px;
+    position: absolute;
+    left: 50px;
+  }
+  .op {
+    position: absolute;
+    top: 600;
+    width: 92%;
+  }
+  .bom {
+    width: 97%;
+    height: 680px;
+  }
+  textarea {
+    width: 60%;
+  }
+  /* 모바일에서 버튼 숨기고 스와이프 활성화 */
+  .chat-bubble_button-box {
+    display: none;
+  }
+  .chat-bubble {
+    touch-action: pan-y pinch-zoom;
+    will-change: transform;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+  }
+  /* 스와이프 상태에 따른 시각적 피드백 */
+  .chat-bubble.swipe-right {
+    background-color: rgba(0, 150, 255, 0.15);
+  }
+  .chat-bubble.swipe-left {
+    background-color: rgba(255, 50, 50, 0.15);
+  }
+  /* 스와이프 방향 표시 */
+  .chat-bubble.swipe-right::after {
+    content: '수정';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0096ff;
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  .chat-bubble.swipe-left::after {
+    content: '삭제';
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff3232;
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  .div {
+    animation: ani 5s infinite;
+  }
+  .chat-bubble_button-box {
+    /* 모바일에서는 버튼 UI를 숨기고 스와이프로 동작하도록 처리합니다 */
+    display: none;
+  }
+  /* 스와이프 시 성능 개선 (가로 제스처 감지) */
+  .chat-bubble {
+    touch-action: pan-y;
+    will-change: transform;
+  }
+}
