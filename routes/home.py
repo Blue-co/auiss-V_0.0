@@ -2,6 +2,6 @@ from flask import Blueprint, render_template
 
 home_bp = Blueprint('home', __name__)
 
-@shopping_bp.route('/home')
-def shopping_list():
+@home_bp.route('/home')
+def home():
     return render_template('hm.html')
