@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
 
-shopping_bp = Blueprint('auiss', __name__)
+auiss_bp = Blueprint('auiss', __name__)
 
-@shopping_bp.route('/auiss')
-def shopping_list():
+@auiss_bp.route('/auiss')
+def auiss():
     return render_template('auis.html')
