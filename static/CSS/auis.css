@@ -1,4 +1,5 @@
 .op {
+  display: flex;
   background-color: #121319;
   border: 1px solid #1b1d25;
   border-radius: 30px;
