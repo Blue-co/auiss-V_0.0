@@ -1,17 +1,17 @@
-from flask import Flask
-# 아까 만든 블루프린트를 불러옵니다.
-from routes.auiss import auiss_bp
-from routes.setting import setting_bp
+import os
+from flask import Flask, render_template
 
-app = Flask(__name__)
+#app.py
 
-# 블루프린트 등록 (이게 핵심입니다!)
-app.register_blueprint(auiss_bp)
-app.register_blueprint(setting_bp)
+app = Flask(__name__, static_url_path='/static')
+
+# 환경 변수에서 비밀키와 포트 가져오기
+
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev_key_123')
+port = int(os.environ.get("PORT", 10000))
 
 @app.route('/')
-def index():
-    return "메인 페이지입니다."
-
-if __name__ == '__main__':
-    app.run(debug=True)
+def hello():
+    return render_template('auis.html')
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=port)
