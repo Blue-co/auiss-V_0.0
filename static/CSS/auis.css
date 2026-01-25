@@ -1,3 +1,16 @@
+.op {
+  background-color: #121319;
+  border: 1px solid #1b1d25;
+  border-radius: 30px;
+  width: 60%;
+  height: 42px;
+  margin: 20px 0px;
+  position: absolute;
+  /*710px*/
+  top: 710px;
+  padding: 1px;
+}
+
 .chat-bubble {
   background: #222a36;
   color: #fff;
@@ -104,7 +117,7 @@ textarea:hover {
   }
   .op {
     position: absolute;
-    top: 600;
+    top: 500px;
     width: 92%;
   }
   .bom {
