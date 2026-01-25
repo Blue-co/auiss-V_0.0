@@ -58,12 +58,12 @@ textarea {
   background-color: #000000;
   color: blue;
   border: 5px solid #66cdaa;
-  width: 87%;
-  height: 10px;
+  width: 800px;
+  height: 15px;
   resize: none;
   overflow-y: auto;
   border-radius: 8px;
-  margin: 0 0 0 6px;
+  margin: 1px 0 0 6px;
 }
 
 textarea:hover {
@@ -109,7 +109,7 @@ textarea:hover {
   }
   .bom {
     width: 97%;
-    height: 680px;
+    height: 630px;
   }
   textarea {
     width: 60%;
