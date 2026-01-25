@@ -59,7 +59,7 @@ textarea {
   color: blue;
   border: 5px solid #66cdaa;
   width: 87%;
-  height: auto;
+  height: 20px;
   resize: none;
   overflow-y: auto;
   border-radius: 8px;
