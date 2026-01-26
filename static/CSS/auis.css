@@ -108,7 +108,7 @@ textarea:hover {
 @media (max-width: 550px) and (min-width: 300px) {
   .op {
     position: absolute;
-    top: 650px;
+    top: 640px;
     padding: 1px;
     margin: 0;
     width: 100%;
@@ -125,7 +125,7 @@ textarea:hover {
   .div1{
     width: 30px;
     height: 30px;
-    margin: 4px 0 1px 20px;
+    margin: 4px 4px 1px 20px;
   }
   /* 모바일에서 버튼 숨기고 스와이프 활성화 */
   .chat-bubble_button-box {
