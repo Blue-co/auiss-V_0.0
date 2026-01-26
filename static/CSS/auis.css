@@ -109,7 +109,7 @@ textarea:hover {
   .op {
     position: absolute;
     top: 650px;
-    padding: 0;
+    padding: 1px;
     margin: 0;
     width: 100%;
   }
