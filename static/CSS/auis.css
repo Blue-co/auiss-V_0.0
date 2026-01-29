@@ -7,7 +7,7 @@
   height: 42px;
   margin: 20px 0px;
   position: absolute;
-  top: 710px;
+  bottom: 0;
   padding: 1px;
 }
 
@@ -107,8 +107,6 @@ textarea:hover {
 }
 @media (max-width: 550px) and (min-width: 300px) {
   .op {
-    position: absolute;
-    top: 650px;
     padding: 1px;
     margin: 0;
     width: 100%;
