@@ -105,7 +105,7 @@ function loadStoredIdea() {
             passive: true,
           });
           bubble.addEventListener('touchmove', onTouchMove, { passive: false });
-          bubble.addEventListener('touchend', onToucㄷhEnd);
+          bubble.addEventListener('touchend', onTouchEnd);
         });
       }
     } catch (err) {
