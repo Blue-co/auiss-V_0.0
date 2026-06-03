@@ -134,3 +134,5 @@ function editMsg(idx) {
   document.getElementById('youInput').value = ideas[idx];
   editIdx = idx;
 }
+
+
