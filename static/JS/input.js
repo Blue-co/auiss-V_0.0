@@ -26,7 +26,7 @@ function brE() {
   // event.preventDefault()가 필요할 수 있습니다.
 }
 
-const textarea = document.querySelector('textarea");
+const textarea = document.querySelector('textarea');
 
 textarea.addEventListener('input', function() {
   // 높이를 초기화한 후, 내부 컨텐츠 크기(scrollHeight)만큼 높이를 키웁니다.
