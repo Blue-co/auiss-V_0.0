@@ -70,8 +70,7 @@ textarea {
   color: blue;
   border: 5px solid #66cdaa;
   width: 87%;
-  min-height: 25px;
-  max-height: 150px;
+  padding-top: 25px;
   resize: none;
   overflow-y: auto;
   border-radius: 8px;
