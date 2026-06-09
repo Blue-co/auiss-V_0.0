@@ -30,6 +30,6 @@ const textarea = document.querySelector('textarea');
 
 textarea.addEventListener('input', function() {
   // 높이를 초기화한 후, 내부 컨텐츠 크기(scrollHeight)만큼 높이를 키웁니다.
-  this.style.paddingBottom = 'auto';
-  this.style.paddingBottom = this.scrollHeight + 'px';
+  this.style.paddingTop = 'auto';
+  this.style.paddingTop = this.scrollHeight + 'px';
 });
